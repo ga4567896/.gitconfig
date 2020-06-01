@@ -1,0 +1,36 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = Shawn
+	email = ga4567896@gmail.com
+[alias]
+	a = add
+	b = branch
+	c = commit
+	d = diff
+	f = fetch
+	g = grep
+	l = log
+	m = merge
+	o = checkout
+	p = pull
+	r = remote
+	s = status
+	w = whatchanged
+
+	aa = add --all
+
+	ca = commit --amend
+	cam = commit --amend --message
+	ci = commit --interactive
+	cm = commit --message
+	
+	co = checkout
+	con = checkout --no-guess
+
+[core]
+	longpaths = true
+	editor = vim
